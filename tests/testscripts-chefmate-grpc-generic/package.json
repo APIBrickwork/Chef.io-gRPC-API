@@ -1,0 +1,17 @@
+{
+  "name": "testscripts-chefmate-grpc-generic",
+  "version": "1.0.0",
+  "description": "Test script for the usage of the generic service of ChefmateServer with gRPC.",
+  "main": "chefmatetestsgeneric.js",
+  "dependencies": {
+    "protobufjs": "^5.0.1",
+    "grpc": "^0.14.1",
+    "nodeunit": "^0.9.1",
+    "async": "^1.5.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "tfreundo (https://github.com/tfreundo)",
+  "license": "MIT"
+}
