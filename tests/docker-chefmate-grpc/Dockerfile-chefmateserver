@@ -14,8 +14,8 @@ ENV awsSecretAccessKey 'ENTER KEY'
 ######################################
 ## Modify to set your own Chef Repo ##
 ######################################
-ENV chefRepositoryName 'Chef.io-gRPC-API'
-ENV chefRepositoryUrl 'https\:\/\/github.com\/APIBrickwork\/Chef.io-gRPC-API.git'
+ENV chefRepositoryName 'Chef.io-gRPC-API-Chef'
+ENV chefRepositoryUrl 'https\:\/\/github.com\/APIBrickwork\/Chef.io-gRPC-API-Chef.git'
 ENV chefRepositoryBranch 'master'
 
 
