@@ -30,6 +30,9 @@ RUN apt-get update && \
     apt-get install -y oracle-java8-installer && \
     apt-get clean
 
+VOLUME /api
+COPY ./chefmate.proto /api/main.proto
+
 # Install chef-client
 RUN wget https://packages.chef.io/stable/ubuntu/10.04/chef_12.10.24-1_amd64.deb
 RUN dpkg -i chef_12.10.24-1_amd64.deb
@@ -61,7 +64,7 @@ COPY ./chefmateserver-1.2.jar /home/chefmate/chefmateserver
 RUN mkdir /home/chefmate/.ssh
 
 #Expose ports
-EXPOSE 8080
+EXPOSE 8181
 
 ############################
 ## ChefmateServer Section ##
@@ -84,3 +87,6 @@ RUN sed -i "s/^chef_repo_branch=.*$/chef_repo_branch=${chefRepositoryBranch}/" c
 
 # Initialize
 RUN java -jar chefmateserver-1.2.jar -i
+
+# Run the server
+CMD ["java", "-jar", "chefmateserver-1.2.jar", "-p", "8181"]
