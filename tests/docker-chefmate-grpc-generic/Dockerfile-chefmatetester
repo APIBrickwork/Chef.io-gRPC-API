@@ -19,8 +19,8 @@ WORKDIR /home/tester
 RUN git clone https://github.com/APIBrickwork/Chef.io-gRPC-API.git
 
 # Install all necessary modules using npm
-RUN export NODE_PATH=$NODEPATH:/home/tester/Chef.io-gRPC-API.git/tests/testscripts-chefmate-grpc-generic
-WORKDIR /home/tester/Chef.io-gRPC-API.git/tests/testscripts-chefmate-grpc-generic
+RUN export NODE_PATH=$NODEPATH:/home/tester/Chef.io-gRPC-API/tests/testscripts-chefmate-grpc-generic
+WORKDIR /home/tester/Chef.io-gRPC-API/tests/testscripts-chefmate-grpc-generic
 RUN npm --quiet install
 
 # Start Unit-Tests
