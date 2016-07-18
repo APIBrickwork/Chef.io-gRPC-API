@@ -14,7 +14,7 @@ This is ChefMateServer offering Chef.io-Functionality through a gRPC API.
 
 > The default config does NOT contain the AWS access and secret access key for security reasons. This has to be added manually, if local installation, or can be specified as input parameters for docker, if using docker containers.
 
-* __-i__ Initializes the server environment according to the settings specified in `chefmate.conf`. This includes pulling the following [Chef repository](https://github.com/tfreundo/LabCourse-group4-SS2016-CHEFrepo) by default (or the one specified in `chefmate.conf`) and afterwards executing the initialization script [chefMateServerChefProvisioningSetup.sh](https://github.com/tfreundo/LabCourse-group4-SS2016-CHEFrepo/blob/master/initScripts/chefMateServerChefProvisioningSetup.sh)
+* __-i__ Initializes the server environment according to the settings specified in `chefmate.conf`. This includes pulling the following [Chef repository](https://github.com/APIBrickwork/Chef.io-gRPC-API-Chef) by default (or the one specified in `chefmate.conf`) and afterwards executing the initialization script [chefMateServerChefProvisioningSetup.sh](https://github.com/APIBrickwork/Chef.io-gRPC-API-Chef/blob/master/initScripts/chefMateServerChefProvisioningSetup.sh)
 * __-p__ Start the ChefMateServer listening on the specified port.
 
 ## Docker
